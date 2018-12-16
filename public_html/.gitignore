@@ -1,0 +1,5 @@
+*
+!.gitignore
+!index.html
+!mysql.php
+!phpinfo.php
