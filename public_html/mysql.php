@@ -1,6 +1,6 @@
 <h1>Hello Fellow Programmers!</h1>
 <h4>Attempting MySQL connection from php...</h4>
-<?php
+<?
     $host = 'mysql';
     $user = 'root';
     $pass = 'rootpassword';
