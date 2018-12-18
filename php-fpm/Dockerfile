@@ -38,5 +38,4 @@ RUN docker-php-ext-install gd && \
 
 
 COPY composer.sh  /var/www/html/composer.sh
-RUN ls && pwd
 RUN ./composer.sh
