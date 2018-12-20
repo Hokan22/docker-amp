@@ -24,6 +24,7 @@ services:
 
   mysql:
     image: mysql:5.7
+    restart: unless-stopped
     volumes:
       - mysql-data:/var/lib/mysql
     networks:
