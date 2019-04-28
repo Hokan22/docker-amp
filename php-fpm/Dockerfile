@@ -16,7 +16,11 @@ RUN apt-get update && \
         wget \
         unzip \
         cron \
-        nano
+        nano \
+        zsh
+
+# Download Grml ZSH Config
+RUN wget -qO /root/.zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 
 # Install the PHP pcntl extention
 RUN docker-php-ext-install pcntl
