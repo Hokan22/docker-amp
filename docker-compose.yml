@@ -47,9 +47,24 @@ services:
     networks:
       - backend
 
+
+  mongodb:
+    image: mongo:4
+    restart: unless-stopped
+    volumes:
+      - mongodb-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
+    networks:
+      - backend
+
 volumes:
   mysql-data:
   mail-data:
+  mongodb-data:
 
 networks:
   backend:
