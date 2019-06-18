@@ -30,6 +30,11 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-install pdo_mysql
 # Install the PHP mysqli extention
 RUN docker-php-ext-install mysqli
+# Install the PHP json extention
+RUN docker-php-ext-install json
+# Install the PHP mongodb extention
+RUN pecl install mongodb
+RUN docker-php-ext-enable mongodb
 
 # Install the PHP gd library
 RUN docker-php-ext-install gd && \
